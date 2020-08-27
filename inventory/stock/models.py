@@ -21,7 +21,7 @@ class Stock(Base):
         return str(self.pk)
 
 
-class StockItens(models.Model):
+class StockItems(models.Model):
     stock = models.ForeignKey(Stock, on_delete=models.CASCADE)
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
     qtd = models.DecimalField(_("Estoque atual"), max_digits=16,
