@@ -1,0 +1,20 @@
+# created by virtualenv automatically
+bin
+lib
+
+# django default
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+
+# derated by django
+celerybeat-schedule
+*_initial.py
+*_auto_*.py
+.vscode
+.idea
+.DS_Store
+pyvenv.cfg
+db.sqlite3
