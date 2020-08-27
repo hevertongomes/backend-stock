@@ -18,3 +18,4 @@ celerybeat-schedule
 .DS_Store
 pyvenv.cfg
 db.sqlite3
+.env
