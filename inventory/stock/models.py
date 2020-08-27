@@ -1,6 +1,7 @@
 from django.db import models
 from inventory.core.models import Base
 from inventory.items.models import Item
+from decimal import Decimal
 from django.utils.translation import ugettext_lazy as _
 
 
@@ -23,8 +24,10 @@ class Stock(Base):
 class StockItens(models.Model):
     stock = models.ForeignKey(Stock, on_delete=models.CASCADE)
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
-    qtd = models.PositiveIntegerField()
-    balance = models.PositiveIntegerField()
+    qtd = models.DecimalField(_("Estoque atual"), max_digits=16,
+        decimal_places=2, default=Decimal('1'))
+    balance = models.DecimalField(_("Estoque atual"), max_digits=16,
+        decimal_places=2, default=Decimal('1'))
 
     class Meta:
         ordering = ('pk',)
