@@ -4,14 +4,14 @@ from inventory.items.models import Item
 from django.utils.translation import ugettext_lazy as _
 
 
-MOVEMENT = [
-    ("e", "Entrada")
-    ("s", "Saída")
+MOVEMENT_CHOICES = [
+    ("0", "Entrada"),
+    ("1", "Saída")
 ]
 
 class Stock(Base):
     nf = models.PositiveIntegerField('nota fiscal', null=True, blank=True)
-    movement = models.CharField(max_length=1, choices=MOVEMENT)
+    movement = models.CharField(max_length=1, choices=MOVEMENT_CHOICES)
 
     class Meta:
         ordering = ('-created',)
