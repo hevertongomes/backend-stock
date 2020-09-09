@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+from inventory.items.models import Item
+
+
+@admin.register(Item)
+class ItemAdmin(admin.ModelAdmin):
+    list_display = ('name', 'unit', 'brand', 'current_inventory', 'minimum_stock', 'validaty', 'active')
