@@ -18,7 +18,7 @@ class Stock(Base):
         ordering = ('-created',)
 
     def __str__(self):
-        return str(self.pk)
+        return str(self.nf)
 
 
 class StockItem(models.Model):
@@ -33,4 +33,4 @@ class StockItem(models.Model):
         ordering = ('pk',)
 
     def __str__(self):
-        return '{} - {} - {}'.format(self.pk, self.stock.pk, self.item)
+        return 'Stock: {} - com quantidade: {}'.format(self.pk, self.qtd)
