@@ -19,6 +19,7 @@ class Item(Base):
     name = models.CharField(_("Nome do Item"), max_length=100)
     unit = models.CharField(_("Unidade"), max_length=1, choices=UNIT_CHOICES)
     brand = models.CharField(_("Marca"), max_length=100)
+    cost_value = models.DecimalField(_("Preço de Custo"), max_digits=18, decimal_places=2)
     current_inventory = models.DecimalField(_("Estoque atual"), max_digits=16,
         decimal_places=2, default=Decimal('1'))
     minimum_stock = models.DecimalField(_("Estoque minímo"),  max_digits=16,

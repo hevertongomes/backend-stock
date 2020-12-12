@@ -1,0 +1,122 @@
+[
+    {
+        "model": "items.Item",
+        "pk": 1,
+        "fields": {
+          "name":"Alcool Etilico",
+          "unit": "3",
+          "brand": "Eco Alcool",
+          "cost_value": 20,
+          "minimum_stock": 20.0,
+          "validaty":"2021-01-01"
+        }
+      },
+      {
+        "model": "items.Item",
+        "pk": 2,
+        "fields": {
+          "name":"Alcool 70 %",
+          "unit": "3",
+          "brand": "Eco Alcool",
+          "cost_value": 19.90,
+          "minimum_stock": 30.0,
+          "validaty":"2021-05-01"
+        }
+      },
+      {
+        "model": "items.Item",
+        "pk": 3,
+        "fields": {
+          "name":"Zinco TTX",
+          "unit": "1",
+          "brand": "Potipor",
+          "cost_value": 11.10,
+          "minimum_stock": 12.5,
+          "validaty":"2022-02-02"
+        }
+      },
+      {
+        "model": "items.Item",
+        "pk": 4,
+        "fields": {
+          "name":"Leite detilado",
+          "unit": "1",
+          "brand": "Potipor",
+          "cost_value": 10,
+          "minimum_stock": 15.0,
+          "validaty":"2022-05-02"
+        }
+      },
+      {
+        "model": "items.Item",
+        "pk": 5,
+        "fields": {
+          "name":"Leite detilado",
+          "unit": "1",
+          "brand": "Potipor",
+          "cost_value": 15.50,
+          "minimum_stock": 15.0,
+          "validaty":"2022-05-02"
+        }
+      },
+      {
+        "model": "items.Item",
+        "pk": 6,
+        "fields": {
+          "name":"Caderno Especial",
+          "unit": "0",
+          "brand": "Trend",
+          "cost_value": 10,
+          "minimum_stock": 10,
+          "validaty":"2050-10-10"
+        }
+      },
+      {
+        "model": "items.Item",
+        "pk": 7,
+        "fields": {
+          "name":"Caderno Comum",
+          "unit": "0",
+          "brand": "Trend",
+          "cost_value": 5.50,
+          "minimum_stock": 10,
+          "validaty":"2050-10-10"
+        }
+      },
+      {
+        "model": "items.Item",
+        "pk": 8,
+        "fields": {
+          "name":"Equipamento infravermelho",
+          "unit": "0",
+          "brand": "Trend",
+          "cost_value": 100,
+          "minimum_stock": 2,
+          "validaty":"2050-10-10"
+        }
+      },
+      {
+        "model": "items.Item",
+        "pk": 9,
+        "fields": {
+          "name":"Cadeira Especial",
+          "unit": "0",
+          "brand": "Trend",
+          "cost_value": 100,
+          "minimum_stock": 5,
+          "validaty":"2050-10-10"
+        }
+      },
+      {
+        "model": "items.Item",
+        "pk": 10,
+        "fields": {
+          "name":"Agua estélica",
+          "unit": "3",
+          "brand": "Osfor",
+          "cost_value": 2.50,
+          "minimum_stock": 10.5,
+          "validaty":"2030-10-10"
+        }
+      }
+]
